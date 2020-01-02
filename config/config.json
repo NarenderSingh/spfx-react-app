@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "spfx-react-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spfxReact/SpfxReactWebPart.js",
+          "manifest": "./src/webparts/spfxReact/SpfxReactWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SpfxReactWebPartStrings": "lib/webparts/spfxReact/loc/{locale}.js"
+  }
+}

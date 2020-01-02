@@ -1,0 +1,33 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://wspin.sharepoint.com/sites/SPFx/SitePages/Home.aspx",
+      "customActions": {
+        "200a5b05-16f0-490f-af3a-9ab7374904f8": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "TestMessage": "Test message from Singh, Narender",
+            "Top" : "Top section of the page",
+            "Bottom" : "Bottom section of the page"
+          }
+        }
+      }
+    },
+    "helloWorldExtension": {
+      "pageUrl": "https://wspin.sharepoint.com/sites/SPFx/SitePages/Home.aspx",
+      "customActions": {
+        "200a5b05-16f0-490f-af3a-9ab7374904f8": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "TestMessage": "Test message from Narender Singh",
+            "Top" : "Top section of the page",
+            "Bottom" : "Bottom section of the page"
+          }
+        }
+      }
+    }
+  }
+}
