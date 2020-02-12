@@ -23,6 +23,7 @@
     "bootstrap": "^4.4.1",
     "office-ui-fabric-react": "6.189.2",
     "react": "16.8.5",
+    "react-bootstrap-typeahead": "^3.4.7",
     "react-dom": "16.8.5"
   },
   "resolutions": {

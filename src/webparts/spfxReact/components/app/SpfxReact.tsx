@@ -2,6 +2,7 @@ import * as React from "react";
 import styles from "../SpfxReact.module.scss";
 import { ISpfxReactProps } from "./ISpfxReactProps";
 import App from "../home/App";
+import AutoCompleteInGrid from "../home/AutoCompleteInGrid";
 import { SPHttpClient, SPHttpClientResponse } from "@microsoft/sp-http";
 
 export interface ISPLists {
@@ -23,8 +24,8 @@ export default class SpfxReact extends React.Component<ISpfxReactProps, {}> {
   }
 
   componentDidMount() {
-    console.log(this.props);
-    console.log(this.props.context.spHttpClient);
+    //console.log(this.props);
+    //console.log(this.props.context.spHttpClient);
   }
 
   getList = () => {
@@ -41,20 +42,21 @@ export default class SpfxReact extends React.Component<ISpfxReactProps, {}> {
 
   public render(): React.ReactElement<ISpfxReactProps> {
     const context = this.props.context;
-    console.log(context, "Home Context");
+    //console.log(context, "Home Context");
 
     return (
       <div className={styles.spfxReact}>
         <div className={styles.container}>
           <div className={styles.row}>
             <div className={styles.column}></div>
-            <button
+            {/* <button
               type="button"
               className="btn btn-primary btn-sm"
               onClick={this.getList}
             >
               Get Data
-            </button>
+            </button> */}
+            <AutoCompleteInGrid />
           </div>
         </div>
       </div>
